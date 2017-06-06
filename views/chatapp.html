@@ -1,0 +1,21 @@
+<div ng-controller="MessageController">
+    <div class="menu">
+        <a href="#" class="back"><i class="fa fa-angle-left"></i> <img src="http://i.imgur.com/G4EjwqQ.jpg"
+                                                                       draggable="false"/></a>
+        <div class="name">Random chat</div>
+        <div class="members"><b>You</b>, Marga, Charo & Brotons</div>
+    </div>
+    <ol my-directive id="chat" class="chat">
+        <!--<input id="invisible" type="submit" ng-click="automateMessage()" class="send" value="" box-creator2/>-->
+    </ol>
+    <div class="typezone">
+        <form>
+            <textarea ng-model="message"  placeholder="Say something">
+                   <!--ng-keyup="$event.keyCode == 13 && sendMessage(message) && message ==null"-->
+
+            </textarea>
+            <input type="submit" ng-click="sendMessage(message)" class="send" value="" box-creator/></form>
+            </form>
+        <div class="emojis"></div>
+    </div>
+</div>
